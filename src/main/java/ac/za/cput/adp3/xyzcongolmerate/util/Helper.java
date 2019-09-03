@@ -14,6 +14,11 @@ public class Helper {
 
     public static String getSuffixFromClassName(Class<?> aClass) {
         String className = getClassName(aClass);
-        return className;
+        String suffixClassName = "";
+        for(int i = 0; i < className.length(); i++) {
+            if(Character.isUpperCase(className.charAt(i)))
+                suffixClassName += className.charAt(i);
+        }
+        return suffixClassName;
     }
 }

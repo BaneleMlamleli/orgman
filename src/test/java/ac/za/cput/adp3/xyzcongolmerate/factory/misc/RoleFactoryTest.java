@@ -13,6 +13,6 @@ public class RoleFactoryTest {
         Role role = RoleFactory.buildRole("root");
         Assert.assertNotNull(role.getRoleId());
         Assert.assertEquals("root", role.getRoleName());
-        System.out.println("Role ID:\t"+ role.getRoleId() +"\nRole name:\t"+ role.getRoleName());
+        System.out.println(role.toString());
     }
 }
